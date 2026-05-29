@@ -66,6 +66,9 @@ if __name__ == "__main__":
 
             operador = input('\nEscolha a operação: ')
 
+            escolha = input(
+                '\nEscolha a função (1 = calculadora, 2 = calculadora2): ')
+
 
 
         except ValueError:
