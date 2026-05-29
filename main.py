@@ -51,6 +51,9 @@ if __name__ == "__main__":
         try:
             print('Calculadora')
             print('----------------------------------\n')
+            num1 = float(input('Introduza o primeiro número: '))
+            num2 = float(input('Introduza o segundo número: '))
+            
 
 
         except ValueError:
