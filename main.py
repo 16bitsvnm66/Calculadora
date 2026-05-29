@@ -30,6 +30,19 @@ def calculadora(num1: float, num2: float, operador: str) -> float:
 
     return result
 
+def calculadora2(num1: float, num2: float, operador: str) -> float:
+
+    operacoes = {
+        '+': num1 + num2,
+        '-': num1 - num2,
+        '*': num1 * num2,
+        '/': num1 / num2 if num2 != 0 else float ("nan"),
+        '**': num1 ** num2,
+        '%': num1 % num2 if num2 != 0 else float ("nan"),
+    }
+
+    return operacoes.get(operador, float("nan"))
+
 
 if __name__ == "__main__":
 
