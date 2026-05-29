@@ -44,6 +44,8 @@ def calculadora2(num1: float, num2: float, operador: str) -> float:
     return operacoes.get(operador, float("nan"))
 
 
+
+
 if __name__ == "__main__":
 
     while True:
@@ -53,7 +55,17 @@ if __name__ == "__main__":
             print('----------------------------------\n')
             num1 = float(input('Introduza o primeiro número: '))
             num2 = float(input('Introduza o segundo número: '))
-            
+
+            print('\nOperações disponíveis:')
+            print('+  -> Soma')
+            print('-  -> Subtração')
+            print('*  -> Multiplicação')
+            print('/  -> Divisão')
+            print('** -> Exponenciação')
+            print('%  -> Módulo')
+
+            operador = input('\nEscolha a operação: ')
+
 
 
         except ValueError:
