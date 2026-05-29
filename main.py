@@ -68,6 +68,16 @@ if __name__ == "__main__":
 
             escolha = input(
                 '\nEscolha a função (1 = calculadora, 2 = calculadora2): ')
+            
+            if escolha == '1':
+                resultado = calculadora(num1, num2, operador)
+            else:
+                resultado = calculadora2(num1, num2, operador)
+
+            print(f'\nResultado: {resultado}')
+            
+            
+            
 
 
 
